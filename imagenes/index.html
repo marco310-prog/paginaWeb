@@ -3,63 +3,87 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="description"
+        content="Pagina wed ventas iluminacion led de Marco Cotache Umbo & Jesus Espinoza Aguilar - Desarrolladores Web especializado en HTML y CSS." />
+        <meta name="keywords"
+        content="reflector led , reflector , luces, alumbrado, alumbrado publico, led , high bay, luces para campos deportivos ,iluminacion, luminarias, luminaria exterior , luminaria led" />
+        <meta name="author" content="Marco Cotache Umbo & Jesus Espinoza Aguilar" />
+        <meta name="robots" content="index, follow" />
+        <!-- OPEN GRAPH -->
+        <meta property="og:title" content="Marco Cotache Umbo y Jesus Espinoza Aguilar - Desarrollador Web"/>
+        <meta property="og:description"
+        content="Pagina Web para venta de luminarias para espaccios publicos" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://INVERSIONES.M&J.com" />
+
+
+
+        <!-- GOOGLE FONTS -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+
         <title>INVERSIONES M&J</title>
         <link rel="stylesheet" href="estilos/estilos.css">
     </head>
     <body>
-        <header class="header">
-            <div class="logo"></div>
-            <a href="#" class="nav-item">Inicios</a>
-            <a href="#" class="nav-item">Productos</a>
-            <a href="#" class="nav-item">Ofertas</a>
-            <a href="#" class="nav-item">Contacto</a>
-        </header>
-        <!--contenedor principal-->
-        <div class="container">
-            <div class="logo"><img src="/imagenes/logoM&J.png" alt="">
-            <div class="nombre-empresa">INVERSIONES M&J</div></div>
-            
-            <section class="product-section">
-                
-                <div class="box-model-demo">
-                    
+        <div class="pagina-web"> 
+                <!-- ========================================
+                        HEADER CON NAVEGACIÓN RESPONSIVE
+                ======================================== -->
+            <header class="header">
+                <div class="header-container">
 
-
-                </div>
-                <div class="product-grid">
-                    <div class="image-gallery">
-                        <div class="main-image">
-                            <img src="/imagenes/reflector.png.PNG" alt=""><br>
-                            <small></small>
-                        </div>
-                        <div class="thumbnails">
-                            <div class="thumbnail active"></div>
-                            <div class="thumbnail"></div>
-                            <div class="thumbnail"></div>
-                            <div class="thumbnail"></div>
-                        </div>
-                        <div class="product-info">
-                            <h1 class="product-info">REFLECTOR LED 200W</h1>
-                            <div class="current-price">S/.250</div>
-                        </div> 
-                        <div class="product-section">
-                            <span class="tag featured">Led</span>
-                            <span class="tag">24000Lm</span>
-                            <span class="tag">IP65</span>
-                            <span class="tag">6500K</span>
-                            <span class="tag">AC170-265VC</span>
-                        </div> 
-
+                    <div class="header-logo">
+                        <a href="#inicio">
+                            <img src="/imagenes/logoM&J.png" alt=""></a>
+                        <h3 class="nombre-empresa">INVERSIONES M&J</h3>
                     
                     </div>
-                    
+                    <!-- MENÚ MÓVIL -->
+                    <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+                    <label for="menu-toggle" class="header__menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </label>
+                    <!-- NAVEGACIÓN  -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                            <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                            <a href="#Inicio" class="nav__link">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                            <a href="#Productos" class="nav__link">Productos</a>
+                            </li>
+                            <li class="nav__item">
+                            <a href="#Ofertas" class="nav__link">Ofertas</a>
+                            </li>
+                            <li class="nav__item">
+                            <a href="#Contacto" class="nav__link">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-
-
-            </section>
-
+            </header>
+        <!--contenedor principal-->
+            <main class="container">
+            
+            
+                <section class="product-section">
+                
+                    
+                </section>
+            </main>
         </div>
     </body>
+    
 
 
 </html>
