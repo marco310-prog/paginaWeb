@@ -12,7 +12,7 @@
         <!-- OPEN GRAPH -->
         <meta property="og:title" content="Marco Cotache Umbo y Jesus Espinoza Aguilar - Desarrollador Web"/>
         <meta property="og:description"
-        content="Pagina Web para venta de luminarias para espaccios publicos" />
+        content="Pagina Web para venta de luminarias para espacios publicos" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://INVERSIONES.M&J.com" />
 
@@ -27,7 +27,7 @@
 
 
         <title>INVERSIONES M&J</title>
-        <link rel="stylesheet" href="estilos/estilos.css">
+        <link rel="stylesheet" href="/paginaWeb/estilos/estilos.css">
     </head>
     <body>
 
@@ -36,21 +36,21 @@
                         HEADER CON NAVEGACIÓN RESPONSIVE
                 ======================================== -->
             <header class="header">
-                <div class="header-container">
+                <div class="header__container">
 
 
 
                     <div class="header-logo">
                         <a href="#inicio">
-                            <img src="/imagenes/logoM&J.png" alt=""></a>
+                            <img src="/paginaWeb/imagenes/logoM&J.png" alt=""></a>
                             <h3 class="nombre-empresa">INVERSIONES M&J</h3>
                     </div>
                     <!-- MENÚ MÓVIL -->
                     <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
                     <label for="menu-toggle" class="header__menu-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </label>
                     <!-- NAVEGACIÓN  -->
                     <nav class="nav">
@@ -59,13 +59,13 @@
                             <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
                             </li>
                             <li class="nav__item">
-                            <a href="#Productos" class="nav__link">Productos</a>
+                            <a href="#productos" class="nav__link">Productos</a>
                             </li>
                             <li class="nav__item">
-                            <a href="#Ofertas" class="nav__link">Ofertas</a>
+                            <a href="#ofertas" class="nav__link">Ofertas</a>
                             </li>
                             <li class="nav__item">
-                            <a href="#Contacto" class="nav__link">Contacto</a>
+                            <a href="#contacto" class="nav__link">Contacto</a>
                             </li>
                         </ul>
                     </nav>
@@ -80,6 +80,128 @@
                     <div class="hero__buttons">
                         <a href="#inicio" class="button button--primary">Ver Proyectos</a>
                         <a href="#contacto" class="button button--secondary">Contáctame</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre-mi" class="about">
+                <div class="about__container">
+                    <!-- SECCIÓN SUPERIOR: Descripción + Foto -->
+                    <div class="about__header">
+                        <div class="about__content">
+                            <h2 class="about__title">Sobre Mí</h2>
+                            <p class="about__text">
+                                Soy un desarrollador web apasionado con más de 3 años de
+                                experiencia creando soluciones digitales innovadoras. Me
+                                especializo en el desarrollo frontend y backend con
+                                tecnologías modernas como React, Node.js y bases de datos.
+                            </p>
+                            <p class="about__text">
+                                Mi enfoque se centra en escribir código limpio, mantenible y
+                                escalable, siempre siguiendo las mejores prácticas de la
+                                industria. Me encanta aprender nuevas tecnologías y enfrentar
+                                desafíos complejos que me permitan crecer profesionalmente.
+                            </p>
+                            <p class="about__text">
+                                Creo firmemente en la importancia de la colaboración y la
+                                comunicación efectiva en el desarrollo de software. Disfruto
+                                trabajando en equipos multidisciplinarios donde puedo aportar
+                                mis conocimientos técnicos y aprender de otros profesionales.
+                            </p>
+                            <p class="about__text">
+                                Mi objetivo es crear aplicaciones web que no solo sean
+                                funcionales y eficientes, sino que también brinden
+                                experiencias excepcionales a los usuarios finales, combinando
+                                diseño atractivo con rendimiento óptimo.
+                            </p>
+                        </div>
+                        <!-- FOTO PERSONAL -->
+                        <div class="about__image">
+                            <img src="imagenes/CARNET-1.jpg" alt="foto de Giovanni Ramirez" />
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN INFERIOR: Timeline + Valores -->
+                    <div class="about__bottom">
+                        <!-- TIMELINE DE EXPERIENCIA -->
+                        <div class="about__timeline">
+                            <h3 class="about__timeline-title">🚀 Mi Trayectoria</h3>
+                            <div class="timeline-item">
+                                <span class="timeline-item__date">2022-2025</span>
+                                <div class="timeline-item__content">
+                                    <h4>Senior Full Stack Developer</h4>
+                                    <p>
+                                        Liderando proyectos complejos con React, Node.js y AWS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-item__date">2021-2022</span>
+                                <div class="timeline-item__content">
+                                    <h4>Frontend Developer</h4>
+                                    <p>
+                                        Especialización en React y desarrollo de interfaces
+                                        modernas
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-item__date">2020-2021</span>
+                                <div class="timeline-item__content">
+                                    <h4>Junior Developer</h4>
+                                    <p>
+                                        Primeros pasos en desarrollo web con HTML, CSS y
+                                        JavaScript
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="timeline-item__date">2019</span>
+                                <div class="timeline-item__content">
+                                    <h4>Bootcamp Graduado</h4>
+                                    <p>Certificación en Desarrollo Web Full Stack</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- VALORES PERSONALES -->
+                        <div class="about__values">
+                            <h3 class="about__values-title">💎 Mis Valores</h3>
+                            <div class="values-grid">
+                                <div class="value-card">
+                                    <span class="value-card__icon">💡</span>
+                                    <h4 class="value-card__title">Innovación</h4>
+                                    <p class="value-card__desc">
+                                        Siempre busco soluciones creativas
+                                    </p>
+                                </div>
+
+                                <div class="value-card">
+                                    <span class="value-card__icon">🎯</span>
+                                    <h4 class="value-card__title">Calidad</h4>
+                                    <p class="value-card__desc">
+                                        Código limpio y bien documentado
+                                    </p>
+                                </div>
+
+                                <div class="value-card">
+                                    <span class="value-card__icon">⚡</span>
+                                    <h4 class="value-card__title">Eficiencia</h4>
+                                    <p class="value-card__desc">Optimización en cada línea</p>
+                                </div>
+
+                                <div class="value-card">
+                                    <span class="value-card__icon">🤝</span>
+                                    <h4 class="value-card__title">Colaboración</h4>
+                                    <p class="value-card__desc">Trabajo en equipo efectivo</p>
+                                </div>
+
+                                <div class="value-card">
+                                    <span class="value-card__icon">📚</span>
+                                    <h4 class="value-card__title">Aprendizaje</h4>
+                                    <p class="value-card__desc">Actualización constante</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
