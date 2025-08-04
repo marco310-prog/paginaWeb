@@ -91,9 +91,7 @@ body{
     "header"
     "main"
     "footer";
-  grid-template-rows: 120px 1fr auto;    
-    
-
+  grid-template-rows: 120px 1fr auto;
 
   .header {
     grid-area: header;
@@ -239,6 +237,10 @@ body{
         }
       }
     }
+  }
+  .main{
+    grid-area: main;
+
   }
 }
 @media(min-width: 768px){
