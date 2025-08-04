@@ -118,7 +118,7 @@ body{
         gap: 5px;
         font-size: var(--font-size-xl);
         font-weight: 700;
-        animation: tech-pulse 2s ease-in-out infinite;
+        /*animation: tech-pulse 2s ease-in-out infinite;*/
 
         a {
           img {
@@ -197,8 +197,8 @@ body{
             top: 22px;
           }
         }
-        /* MENÚ MÓVIL CON CHECKBOX HACK */
-        .nav {
+      }
+      .nav {
         background-color: var(--color-white);
         position: absolute;
         top: 100%;
@@ -231,18 +231,71 @@ body{
                 color: var(--color-white);
                 transform: translateX(8px);
               }
-             }
+            }
+          } 
+        }
+      }
+      .header-top{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+  .main{
+    .about{
+      padding: var(--spacing-4xl) var(--spacing-md);
+      background-color: var(--color-gray-50);
+
+      .about__container{
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        gap: var(--spacing-2xl);
+
+        .about__header{
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: var(--spacing-2xl);
+          align-items: center;
+        }
+
+        .about__categoria{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .about_imagen{
+            width: 350px;
+            height: 370px;
+            border-radius: 50%;
+            /*overflow: hidden;*/
+            margin: 0;
+            transition: var(--transition-imagen);
+          }
+          .about__title{
+            font-size: var(--font-size-lg);
+            color: var(--color-gray-900);
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+            display: inline-block;
+          }
+          .about_reflectores{
+            display: flex;
+
+            img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius-md);
             }
           }
         }
       }
     }
   }
-  .main{
-    grid-area: main;
-
-  }
 }
+
 @media(min-width: 768px){
   .pagina-web{
 
@@ -260,15 +313,34 @@ body{
           background: transparent;
 
           .nav__list{
-            border: none;
+            display: flex;
+            padding: 0;
+            gap: var(--spacing-lg);
+            
+            .nav__item{
+              border: none;
 
-            .nav__link{
-              padding: var(--spacing-sm) var(--spacing-md);
-              border-radius: var(--radius-3xl);
+              .nav__link{
+                padding: var(--spacing-sm) var(--spacing-md);
+                border-radius: var(--radius-3xl);
+              }
             }
           }
         }
+         .buscador {
+          width: 100%;
+          justify-content: center;
+          margin-top: 10px;
+        }
       }
+    }
+    .main{
+      .about{
+        .about__container{
+
+        }
+      }
+
     }
   }
 }
