@@ -24,6 +24,7 @@
   --color-gray-900: #111827;
   --color-gray-901:#2F64AD;
   --color-gray-902:#9FBD8C;
+  --color-gray-903:#C7432A;
 
   /* TAMAÑOS DE FUENTE */
   --font-size-xs: 0.75rem;
@@ -263,43 +264,39 @@ body{
       padding: var(--spacing-lg) var(--spacing-md);
       text-align: center;
       position: relative;
+      overflow: hidden;
 
       .article__container {
         max-width: 1280px;
-        margin: 0 auto;
+        margin: 10px 10px;
         position: relative;
         z-index: 1;
 
         .reflector{
           display: flex;
-          padding: 20px;
-          flex-grow: 1;
+          padding: 10px;
+          
         }
         .alumbrado{
-          padding: 20px;
           display: flex;
-          flex-grow: 1;
+          padding: 50px;
+          
+          
         }
         .highbay{
           display: flex;
-          padding: 20px;
-          flex-grow: 1;
+          padding: 10px;
+          
         }
         .article__header{
           font-size: var(--font-size-3xl);
           margin: 1px 1px;
 
           .article__title {
-            font-size: var(--font-size-3xl);
+            font-size: var(--font-size-4xl);
             font-weight: bold;
             margin-bottom: var(--spacing-md);
-            background: linear-gradient(
-            90deg,
-            var(--color-terceary) 25%,
-            var(--color-accent) 50%,
-            var(--color-secondary) 75%,
-            var(--color-white) 100%
-            );
+            background: var(--color-gray-900);
             background-size: 200% 200%;
             -webkit-background-clip: text;
             background-clip: text;
@@ -308,9 +305,9 @@ body{
           }
         }
         .article__subtitle {
-          font-size: var(--font-size-xl);
-          font-weight: 400;
-          margin-bottom: var(--spacing-lg);
+          font-size: var(--font-size-3xl);
+          font-weight: 900;
+          margin-bottom: var(--spacing-xl);
           opacity: 0.9;
           animation: fadeInUp 0.8s ease-out 0.2s both;
         }
@@ -345,7 +342,7 @@ body{
 
             .nav__link {
               display: block;
-              padding: var(--spacing-md) var(--spacing-lg);
+              padding: var(--spacing-5xl) var(--spacing-5xl);
               color: var(--color-gray-700);
               text-decoration: none;
               font-weight: 500;
@@ -355,7 +352,7 @@ body{
               .nav__link--active {
                 background-color: var(--color-primary);
                 color: var(--color-white);
-                transform: translateX(8px);
+                transform: translateX(1px);
               }
             }
           } 
@@ -384,22 +381,23 @@ body{
           .button--primary {
             background-color: var(--color-white);
             color: var(--color-primary);
-            border-color: var(--color-white);
+            border-color: var(--color-terceary);
             &:hover {
-              background-color: transparent;
+              background-color: var(--color-gray-903);
               color: var(--color-white);
-              border-color: var(--color-white);
+              border-color: var(--color-terceary);
               transform: translateY(-3px);
               box-shadow: var(--shadow-xl);
             }
           }
           .button--secondary {
-            background-color: transparent;
-            color: var(--color-white);
-            border-color: var(--color-white);
+            background-color: var(--color-white);
+            color: var(--color-primary);
+            border-color: var(--color-gray-901);
             &:hover {
-              background-color: var(--color-white);
-              color: var(--color-primary);
+              background-color: var(--color-gray-901);
+              color: var(--color-white);
+              border-color: var(--color-gray-901);
               transform: translateY(-3px);
               box-shadow: var(--shadow-xl);
             }
@@ -425,8 +423,8 @@ body{
         }
       }
     .projects{
-      padding: var(--spacing-4xl) var(--spacing-md);
-      background-color: var(--color-gray-50);
+      padding: var(--spacing-xl) var(--spacing-md);
+      background-color: var(--color-gray-200);
 
       .project_container{
         max-width: 1280px;
@@ -438,11 +436,12 @@ body{
           display: flex;
           flex-direction: column;
           grid-template-columns: 1fr;
-          gap: var(--spacing-2xl);
+          gap: var(--spacing-xs);
           align-items: center;
           
           .projects_title{
             font-size: var(--font-size-3xl);
+            font-weight: 700;
             color: var(--color-gray-900);
             margin-bottom: var(--spacing-lg);
             position: relative;
@@ -460,14 +459,15 @@ body{
                 var(--color-secondary)
               );
             }
-            .projects_text{
+             
+          }
+          .projects_text{
             font-size: var(--font-size-lg);
             color: var(--color-gray-600);
             line-height: 1.8;
             margin-bottom: var(--spacing-md);
             text-align: justify;
-            } 
-          }
+            }
         }
         .project_image{
             display: flex;
@@ -490,14 +490,17 @@ body{
         }
         .about__values {
           margin-top: var(--spacing-xl);
+          
           .about__values-title {
             font-size: var(--font-size-xl);
             font-weight: 600;
-            color: var(--color-secondary);
+            
+            color: var(--color-gray-800);
             margin-bottom: var(--spacing-lg);
-            display: flex;
+            display: inline-block;
             align-items: center;
             gap: var(--spacing-sm);
+            
           }
           .values-grid {
             display: flex;
@@ -544,12 +547,12 @@ body{
       }
     }
     .contact{
-      padding: var(--spacing-4xl) var(--spacing-md);
-      background: var(--color-gray-100);
+      padding: var(--spacing-2xl) var(--spacing-md);
+      background: var(--color-gray-200);
       color: var(--color-gray-900);
       .contact__container{
         max-width: 1280px;
-        margin: 0;
+        margin: 0 auto;
         display: grid;
         gap: var(--spacing-3xl);
         
@@ -727,6 +730,9 @@ body{
     }
   }
 }
+@media (max-width:var(--breakpoint-sm)) {
+  
+}
 @media (max-width: 640px) {
   .pagina-web{
     
@@ -761,7 +767,7 @@ body{
               font-size: var(--font-size-5xl);
             }
             .hero__buttons{
-              flex-direction: row;
+              flex-direction: column;
               justify-content: center;
             }
             .reflector{
@@ -876,7 +882,14 @@ body{
                 }
               }
             }
-            
+            .hero__buttons{
+              .button{
+                .button--primary{
+                  display: block;
+                  justify-content: center;
+                }
+              }
+            }
 
 
           }
@@ -980,6 +993,7 @@ body{
       .article{
         .article__container{
           .article__categoria{
+
             .nav{
               position: static;
               transform: none;
@@ -997,7 +1011,7 @@ body{
                   border: none;
 
                   .nav__link{
-                    padding: var(--spacing-sm) var(--spacing-md);
+                    padding: var(--spacing-sm) var(--spacing-sm);
                     border-radius: var(--radius-3xl);
                   }
                 }
@@ -1013,15 +1027,25 @@ body{
               
             }
           }
+          .hero__buttons{
+              flex-direction:column;
+              justify-content: center;
+            }
         }
       }
       
       .projects{
         .project_container{
+          .nav{
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          }
           .project_image{
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
             "campo almacen";
+            
           }
           .about__values{
             .values-grid{
@@ -1043,5 +1067,48 @@ body{
   }
   50%{
     width: 100%;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes progressAnimation {
+  from{
+    width: 0%;
+  }
+}
+@keyframes progressHTML {
+  to{
+    width: 95%;
+  }
+}
+@keyframes progressCSS {
+  to{
+    width: 90%;
+  }
+}
+@keyframes faceInUp {
+  from{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
   }
 }
